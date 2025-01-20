@@ -1,3 +1,4 @@
+//client-side rendering
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion"
@@ -7,6 +8,7 @@ const PageTransition = ({children}) => {
     const pathname = usePathname();
     return (
         <AnimatePresence>
+            {/* client-side rerendering each time path changed */}
             <div key={pathname}>
                 <motion.div
                     initial={{opacity:1}}
