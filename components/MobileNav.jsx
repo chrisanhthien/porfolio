@@ -44,7 +44,17 @@ const MobileNav = () => {
                     <SheetDescription>Sidebar</SheetDescription>
                 </SheetHeader>
             </VisuallyHidden>
-            <div>Logo</div>
+            {/* logo */}
+            <div className='mt-32 mb 40 text-center text-2xl'>
+                <Link href="/">
+                    <h1>
+                        Chris Thien<span className='text-accent'>..</span>
+                    </h1>
+                </Link>
+            </div>
+            
+
+            {/* Navigation */}
         </SheetContent>
     </Sheet>
   )
